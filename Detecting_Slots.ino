@@ -9,6 +9,7 @@ const char* mqtt_user = "Omar Alsharqawi";
 const char* mqtt_pass = "Im14Im..&&";
 
 const char* publishTopic = "parking/status";
+const char* gateTopic = "gate/control";  // New topic for gate control
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -33,6 +34,7 @@ void loop() {
   client.loop();
   checkSlots();
   sendSlotStatus();
+  controlGate();  // New function to control the gate
   delay(1000);
 }
 
@@ -53,6 +55,68 @@ void reconnect() {
     if (client.connect("ESP32Client", mqtt_user, mqtt_pass)) {
       Serial.println("connected");
       client.subscribe(publishTopic);
+      client.subscribe(gateTopic);  // Subscribe to gate control topic
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+#include <WiFi.h>
+#include <PubSubClient.h>
+
+const char* ssid = "RJ";
+const char* password = "1234567898";
+const char* mqtt_server = "ddc395f077c4497aa275056e4b727fb2.s1.eu.hivemq.cloud";
+const int mqtt_port = 8883;
+const char* mqtt_user = "Omar Alsharqawi";
+const char* mqtt_pass = "Im14Im..&&";
+
+const char* publishTopic = "parking/status";
+const char* gateTopic = "gate/control";  // New topic for gate control
+
+WiFiClient espClient;
+PubSubClient client(espClient);
+
+const int irPins[6] = {2, 3, 4, 5, 6, 7};
+
+int slotStatus[6] = {0, 0, 0, 0, 0, 0};
+int freeSlots = 6;
+
+void setup() {
+  Serial.begin(115200);
+  setupWiFi();
+  client.setServer(mqtt_server, mqtt_port);
+  client.setCallback(mqttCallback);
+  delay(2000);
+}
+
+void loop() {
+  if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();
+  checkSlots();
+  sendSlotStatus();
+  controlGate();  // New function to control the gate
+  delay(1000);
+}
+
+void setupWiFi() {
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("Connected to WiFi");
+}
+
+void reconnect() {
+  while (!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+    if (client.connect("ESP32Client", mqtt_user, mqtt_pass)) {
+      Serial.println("connected");
+      client.subscribe(publishTopic);
+      client.subscribe(gateTopic);  // Subscribe to gate control topic
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -91,6 +155,16 @@ void sendSlotStatus() {
   Serial.println("Sent message: " + message);
 }
 
+void controlGate() {
+  if (freeSlots == 0) {
+    client.publish(gateTopic, "CLOSE");  // Send command to close the gate
+    Serial.println("All slots full. Gate closing.");
+  } else {
+    client.publish(gateTopic, "OPEN");  // Send command to open the gate
+    Serial.println("Slots available. Gate opening.");
+  }
+}
+
 void mqttCallback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived on topic: ");
   Serial.print(topic);
@@ -100,3 +174,6 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
   }
   Serial.println();
 }
+
+
+
