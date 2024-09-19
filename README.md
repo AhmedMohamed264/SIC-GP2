@@ -24,3 +24,9 @@ The Smart Parking System is an innovative solution designed to manage and optimi
 - **Parking Space Monitoring**: Track and visualize available parking spaces in real-time.
 - **Interactive Parking Management**: Manage parking spaces through a user-friendly interface with buttons and gauges.
 - **Real-Time Notifications**: Receive instant updates about parking space status and availability through MQTT messages.
+
+## Initial Result
+![image](https://github.com/user-attachments/assets/901beee3-4c33-4f47-9a5c-eb7604f88595)
+
+
+ 
