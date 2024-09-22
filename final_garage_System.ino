@@ -143,7 +143,10 @@ void handleGateOperation() {
         gateServo.write(angle);  // Open gate
         delay(100);  // Wait for the servo to move
       }
-   
+
+         const char* topic = "parking";
+         const char* message = "5";
+         client.publish(topic, message);
  // Open gate
     delay(3000);  // Allow gate to open
 
@@ -157,11 +160,6 @@ void handleGateOperation() {
       Serial.println(currentLdr2);
 
       if (currentLdr1 > 3000 && currentLdr2 > 3000) {
-
-          const char* topic = "parking";
-         const char* message = "5";
-         client.publish(topic, message);
-
         Serial.println("No object detected, closing gate...");
          for (int angle = 90; angle >= 0; angle -= 10) {
             gateServo.write(angle);  // Close gate
