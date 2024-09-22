@@ -1,0 +1,3504 @@
+[
+    {
+        "id": "42a50f2d16389950",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "648488f8a7fbb2be",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8a1e745e4796676c",
+            "a3f9af0a6e3e518a",
+            "d646877fdd4eceb0",
+            "ae8d9a26819f1ee8",
+            "867c52f0f0f6968a"
+        ],
+        "x": 68,
+        "y": 913,
+        "w": 1844,
+        "h": 374
+    },
+    {
+        "id": "bb78de1a02351e42",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d0c7c30dfbb014e8",
+            "d30e5f5440a24a97",
+            "2a7d8e85b8e8b6a4",
+            "525abffe4e3a4514",
+            "1b110618d2e28b5c",
+            "99173f363aa5b8ba",
+            "9332c73b74590911",
+            "8cb30f6057a5ac0b",
+            "75383c5e1b43e145",
+            "8b7f1ca1a6956777",
+            "6c7e596ffc3e3fbc",
+            "ea038cc7bf954510",
+            "471a66f9dde5d1d8",
+            "2ea935b77906a58f"
+        ],
+        "x": 1494,
+        "y": 179,
+        "w": 712,
+        "h": 262
+    },
+    {
+        "id": "43c7d91b12f4cec8",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "134f70ae1387f689",
+            "d0c0b15a3366a659",
+            "a1f358e68782fa33",
+            "09721d50c36665c6",
+            "de59868cb0958858",
+            "c8d1a324ff1cc6d8",
+            "68a082285d0c4a3d",
+            "db7f05c3fbde8131",
+            "df04f92b22ed44c4",
+            "9375d4fe147c7f36",
+            "90b8cf0909a229ac",
+            "fdb8b760fd049537",
+            "a2ede7231478457e",
+            "c7119044dc6864d4",
+            "1823ce06ef9a53a3",
+            "a38dbfb333eae712",
+            "5007e19fa9d4fd80",
+            "b51f198557d60ad0",
+            "f17b074a30b14239",
+            "995d19155a7669d4",
+            "88a765f6082db9d3",
+            "b605e12c392a78f8"
+        ],
+        "x": 74,
+        "y": 179,
+        "w": 812,
+        "h": 522
+    },
+    {
+        "id": "032a66b25930215e",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "2d0cec252968acfb",
+            "881146a32ea6a3f6",
+            "b593a3ecc9b3f555",
+            "790eb8b66f3d228a"
+        ],
+        "x": 954,
+        "y": 179,
+        "w": 478,
+        "h": 528
+    },
+    {
+        "id": "ad50999df1d3bca6",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9159e7f153a664f5",
+            "13d1c849b6235fee",
+            "6b45534ce0ffbefe",
+            "e96edba1c69b5721"
+        ],
+        "x": 68,
+        "y": 1413,
+        "w": 1064,
+        "h": 414
+    },
+    {
+        "id": "6fd87bbaef1b3caa",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9eb218f83594caf7",
+            "d1b7688ca6311b30",
+            "bce86ffeb4a8a486",
+            "d61ec1abd901b55b"
+        ],
+        "x": 1188,
+        "y": 1413,
+        "w": 1244,
+        "h": 554
+    },
+    {
+        "id": "ae8d9a26819f1ee8",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "648488f8a7fbb2be",
+        "name": "Login",
+        "style": {
+            "label": true,
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "c66b0441f7f0a913",
+            "a5ed8c9204040932",
+            "e308a0af3243b36e",
+            "3a0278faa74098cc",
+            "0d023288a04c78d7",
+            "22fe5da0e1a55e8c"
+        ],
+        "x": 954,
+        "y": 979,
+        "w": 932,
+        "h": 242
+    },
+    {
+        "id": "867c52f0f0f6968a",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "648488f8a7fbb2be",
+        "name": "Sign Up",
+        "style": {
+            "label": true,
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "8fec4793b5e038a3",
+            "8f13938ad4302115",
+            "89cd854e2cf35d33",
+            "63b6822934183017",
+            "c3a78ec67dbf0320",
+            "314f59b704e8a3fa",
+            "d43c529d55297ff3"
+        ],
+        "x": 94,
+        "y": 939,
+        "w": 572,
+        "h": 322
+    },
+    {
+        "id": "b593a3ecc9b3f555",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "032a66b25930215e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8f8fc35bd50608d0",
+            "4f152e434686aca7",
+            "b95dca404ff44f9e",
+            "a8c647cf9afc16f1"
+        ],
+        "x": 994,
+        "y": 259,
+        "w": 412,
+        "h": 162
+    },
+    {
+        "id": "790eb8b66f3d228a",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "032a66b25930215e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "03c9aed2f4b0097f",
+            "32944eec190aea38",
+            "61679e04019be540",
+            "2acbd1d6858c96f1"
+        ],
+        "x": 994,
+        "y": 519,
+        "w": 412,
+        "h": 162
+    },
+    {
+        "id": "9159e7f153a664f5",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "ad50999df1d3bca6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7daea0318c58ee1d",
+            "0376fb5b1d99faaf",
+            "a65e42592449c4a2",
+            "024028111000be6e",
+            "147f900c12f91d6e",
+            "b4a20fa7cc5c4b9c",
+            "06fe01d33417858b",
+            "b06c66c3127e181e",
+            "141e1decaff91e91",
+            "7df2bd50067194bf"
+        ],
+        "x": 94,
+        "y": 1439,
+        "w": 1012,
+        "h": 202
+    },
+    {
+        "id": "13d1c849b6235fee",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "ad50999df1d3bca6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9eecc8618d205df1",
+            "b6b47f1954c85268",
+            "b4888e3192e78739",
+            "4a7e827083ffadc0"
+        ],
+        "x": 94,
+        "y": 1719,
+        "w": 852,
+        "h": 82
+    },
+    {
+        "id": "d1b7688ca6311b30",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "6fd87bbaef1b3caa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c44ef09814f733a0",
+            "d881c9c5bbbd8e65",
+            "4912f64d8dbc3c62",
+            "73e8ebcf0ae2a9b4",
+            "5dcdeaa0ec554a04",
+            "936a57b1019a1170",
+            "5fa4ee27cadb3fc6"
+        ],
+        "x": 1854,
+        "y": 1519,
+        "w": 552,
+        "h": 262
+    },
+    {
+        "id": "bce86ffeb4a8a486",
+        "type": "group",
+        "z": "42a50f2d16389950",
+        "g": "6fd87bbaef1b3caa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f640ace0219d9c59",
+            "226e215bfa2c15d9",
+            "8f8595734a5c25ef",
+            "1aae422567bd9e93",
+            "7437ef7eb0365997",
+            "73624ae7c2e2ad50",
+            "808680f0655a8505",
+            "c8d26fb0e51b261e",
+            "83cb0ec6e2f010c7",
+            "a3db3f1397e2e77c",
+            "9520c98871825735",
+            "8d9d1493e4e628c3",
+            "552feb0a0f35b6b4",
+            "0d7e95fab5220af5",
+            "adda3e64362544fe",
+            "d496b1dcb917e4f5"
+        ],
+        "x": 1214,
+        "y": 1439,
+        "w": 572,
+        "h": 502
+    },
+    {
+        "id": "c66b0441f7f0a913",
+        "type": "ui_form",
+        "z": "42a50f2d16389950",
+        "g": "ae8d9a26819f1ee8",
+        "name": "login form",
+        "label": "",
+        "group": "45dd704ece548330",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "options": [
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "Password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Email": "",
+            "Password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 1040,
+        "y": 1100,
+        "wires": [
+            [
+                "a5ed8c9204040932"
+            ]
+        ]
+    },
+    {
+        "id": "8a1e745e4796676c",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "648488f8a7fbb2be",
+        "name": "hide Home page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tabs\":{\t        \"hide\":[\t            \"Home\",\t            \"Timer\"\t        ]\t    }\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 1060,
+        "wires": [
+            [
+                "d646877fdd4eceb0"
+            ]
+        ]
+    },
+    {
+        "id": "a3f9af0a6e3e518a",
+        "type": "inject",
+        "z": "42a50f2d16389950",
+        "g": "648488f8a7fbb2be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 830,
+        "y": 1000,
+        "wires": [
+            [
+                "8a1e745e4796676c"
+            ]
+        ]
+    },
+    {
+        "id": "d646877fdd4eceb0",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "648488f8a7fbb2be",
+        "name": "",
+        "events": "all",
+        "x": 820,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5b77ee111451d26",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "name": "Sign Up & Login page",
+        "info": "",
+        "x": 180,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "c77da5b3e1fa6ac5",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "name": "Home page",
+        "info": "",
+        "x": 150,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a5ed8c9204040932",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "ae8d9a26819f1ee8",
+        "name": "function 5",
+        "func": "var mail = msg.payload.Email ;\nvar pass = msg.payload.Password\nvar original_mail = global.get(\"mail\");\nvar original_pass = global.get(\"pass\");\nvar msg1={};\nvar msg2={};\n\n\nif ((mail == original_mail) && (pass == original_pass)){\n    msg1.payload=\"Login Successful\";\n    msg.payload={\n        \"tabs\":{\n            \"hide\":[\n                \"Login\",\n                \"SignUp\"\n            ],\n            \"show\":[\n                \"Home\"\n            ]\n        }\n    }\n    return [msg1,null]\n    \n}\nelse{\n    msg2.payload= \"Login Failed\";\n    return [null, msg2]\n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 1100,
+        "wires": [
+            [
+                "0d023288a04c78d7",
+                "3a0278faa74098cc"
+            ],
+            [
+                "22fe5da0e1a55e8c"
+            ]
+        ]
+    },
+    {
+        "id": "e308a0af3243b36e",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "ae8d9a26819f1ee8",
+        "name": "",
+        "events": "all",
+        "x": 1800,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a0278faa74098cc",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "ae8d9a26819f1ee8",
+        "name": "go to Home page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"Home\"\t    \t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1610,
+        "y": 1100,
+        "wires": [
+            [
+                "e308a0af3243b36e"
+            ]
+        ]
+    },
+    {
+        "id": "0d023288a04c78d7",
+        "type": "ui_toast",
+        "z": "42a50f2d16389950",
+        "g": "ae8d9a26819f1ee8",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "#51bf54",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1410,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "22fe5da0e1a55e8c",
+        "type": "ui_toast",
+        "z": "42a50f2d16389950",
+        "g": "ae8d9a26819f1ee8",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "#ee5e3d",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1410,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "8fec4793b5e038a3",
+        "type": "ui_form",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "name": "Sign Up Form",
+        "label": "",
+        "group": "af857bfc9ba965cc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "First Name",
+                "value": "First Name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Last Name",
+                "value": "Last Name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Phone",
+                "value": "Phone",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "Password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Gender",
+                "value": "Gender",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "First Name": "",
+            "Last Name": "",
+            "Email": "",
+            "Phone": "",
+            "Password": "",
+            "Gender": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 200,
+        "y": 1060,
+        "wires": [
+            [
+                "8f13938ad4302115",
+                "89cd854e2cf35d33",
+                "c3a78ec67dbf0320"
+            ]
+        ]
+    },
+    {
+        "id": "8f13938ad4302115",
+        "type": "debug",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "89cd854e2cf35d33",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "name": "go to Login page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"Login\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1140,
+        "wires": [
+            [
+                "63b6822934183017"
+            ]
+        ]
+    },
+    {
+        "id": "63b6822934183017",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "name": "",
+        "events": "all",
+        "x": 580,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3a78ec67dbf0320",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "name": "function 6",
+        "func": "global.set(\"mail\", msg.payload.Email);\nglobal.set(\"pass\", msg.payload.Password);\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f834f889da4e9c95",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "name": "Timer page",
+        "info": "",
+        "x": 140,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "6e1c85ef3ec7b3f6",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "name": "Receipt page",
+        "info": "",
+        "x": 1270,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "99fd14f35f405c77",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "name": "Rent history page",
+        "info": "",
+        "x": 160,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "9eecc8618d205df1",
+        "type": "ui_gauge",
+        "z": "42a50f2d16389950",
+        "g": "13d1c849b6235fee",
+        "name": "",
+        "group": "b556df43cf2d43db",
+        "order": 7,
+        "width": 4,
+        "height": 4,
+        "gtype": "wave",
+        "title": "Timer",
+        "label": "min",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "72",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "d0c7c30dfbb014e8",
+        "type": "ui_media",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "name": "",
+        "width": 7,
+        "height": 4,
+        "order": 1,
+        "category": "Images",
+        "file": "intro.jpg",
+        "layout": "adjust",
+        "showcontrols": false,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1570,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2af61832e430968",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "name": "intro page",
+        "info": "",
+        "x": 1560,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d30e5f5440a24a97",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "name": "",
+        "group": "658f1834264b562b",
+        "order": 15,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Login",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "login",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1650,
+        "y": 360,
+        "wires": [
+            [
+                "1b110618d2e28b5c"
+            ]
+        ]
+    },
+    {
+        "id": "2a7d8e85b8e8b6a4",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "name": "",
+        "group": "658f1834264b562b",
+        "order": 14,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Sign Up",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "login",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1660,
+        "y": 400,
+        "wires": [
+            [
+                "9332c73b74590911"
+            ]
+        ]
+    },
+    {
+        "id": "525abffe4e3a4514",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "name": "",
+        "events": "all",
+        "x": 2040,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b110618d2e28b5c",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "name": "go to Login page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"Login\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1850,
+        "y": 360,
+        "wires": [
+            [
+                "525abffe4e3a4514"
+            ]
+        ]
+    },
+    {
+        "id": "99173f363aa5b8ba",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "name": "",
+        "events": "all",
+        "x": 2040,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9332c73b74590911",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "name": "go to SignUp page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"Timer\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1850,
+        "y": 400,
+        "wires": [
+            [
+                "99173f363aa5b8ba"
+            ]
+        ]
+    },
+    {
+        "id": "40c293cb799b8fcb",
+        "type": "remote-access",
+        "z": "42a50f2d16389950",
+        "confignode": "b3db229fa503a391",
+        "name": "MyApp",
+        "verbose": 0,
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7daea0318c58ee1d",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "Start",
+        "group": "b556df43cf2d43db",
+        "order": 17,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "lock_open",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "num1",
+        "topicType": "str",
+        "x": 170,
+        "y": 1500,
+        "wires": [
+            [
+                "147f900c12f91d6e",
+                "b4a20fa7cc5c4b9c"
+            ]
+        ]
+    },
+    {
+        "id": "0376fb5b1d99faaf",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "Stop",
+        "group": "b556df43cf2d43db",
+        "order": 18,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "lock_outline",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "num2",
+        "topicType": "str",
+        "x": 170,
+        "y": 1600,
+        "wires": [
+            [
+                "147f900c12f91d6e",
+                "b4a20fa7cc5c4b9c"
+            ]
+        ]
+    },
+    {
+        "id": "a65e42592449c4a2",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "group": "b556df43cf2d43db",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "End time: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "024028111000be6e",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "group": "b556df43cf2d43db",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Start time: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "147f900c12f91d6e",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "function 13",
+        "func": "var msg1 ={};\nvar msg2 ={};\n\ncontext.set(\"date\",new Date(msg.payload));\n\nif (msg.topic === \"num1\") {\n  \n   msg1.payload = context.get(\"date\").toTimeString().split(' ')[0];   \n    \n}\nelse{\n   msg2.payload = context.get(\"date\").toTimeString().split(' ')[0];\n}\nreturn [msg1 ,msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1500,
+        "wires": [
+            [
+                "024028111000be6e"
+            ],
+            [
+                "a65e42592449c4a2"
+            ]
+        ]
+    },
+    {
+        "id": "8f8fc35bd50608d0",
+        "type": "mqtt out",
+        "z": "42a50f2d16389950",
+        "g": "b593a3ecc9b3f555",
+        "name": "Publisher(output)",
+        "topic": "test",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "412f42ae1c3de129",
+        "x": 1290,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4f152e434686aca7",
+        "type": "mqtt in",
+        "z": "42a50f2d16389950",
+        "g": "b593a3ecc9b3f555",
+        "name": "Subscriber(input)",
+        "topic": "test",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "412f42ae1c3de129",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 300,
+        "wires": [
+            [
+                "b95dca404ff44f9e"
+            ]
+        ]
+    },
+    {
+        "id": "b95dca404ff44f9e",
+        "type": "debug",
+        "z": "42a50f2d16389950",
+        "g": "b593a3ecc9b3f555",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "134f70ae1387f689",
+        "type": "ui_media",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "group": "1bc6b87e832eb6b6",
+        "name": "",
+        "width": 5,
+        "height": 5,
+        "order": 7,
+        "category": "Images",
+        "file": "parking2.png",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": false,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0c0b15a3366a659",
+        "type": "ui_gauge",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "",
+        "group": "1bc6b87e832eb6b6",
+        "order": 8,
+        "width": 2,
+        "height": 3,
+        "gtype": "donut",
+        "title": "",
+        "label": "slots",
+        "format": "{{4-value}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 610,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "a1f358e68782fa33",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "Rent",
+        "group": "1bc6b87e832eb6b6",
+        "order": 14,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Rent",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "pressed",
+        "payloadType": "str",
+        "topic": "Rent",
+        "topicType": "str",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "df04f92b22ed44c4",
+                "90b8cf0909a229ac",
+                "c8d1a324ff1cc6d8",
+                "b51f198557d60ad0"
+            ]
+        ]
+    },
+    {
+        "id": "09721d50c36665c6",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "function 1",
+        "func": "global.set(\"slot\",msg.payload);\nglobal.set(\"gate\",\"open\");\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de59868cb0958858",
+        "type": "ui_numeric",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "slots",
+        "label": "Choose slot :",
+        "tooltip": "",
+        "group": "1bc6b87e832eb6b6",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "4",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "09721d50c36665c6"
+            ]
+        ]
+    },
+    {
+        "id": "c8d1a324ff1cc6d8",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "function 7",
+        "func": "var slotNumber = global.get(\"slot\");\nvar gateStatus = global.get(\"gate\");\nvar msg1 = {};\nvar msg2 = {};\nvar msg3 = {};\n\n\nif (msg.payload === \"pressed\" ) {\n\n   msg1.payload = slotNumber;\n   msg2.payload = gateStatus;  \n   msg3.payload = \"Your lot is \"+slotNumber+\"\\n Good luck 😎 \";          \n} \n\nreturn [msg1, msg2,msg3];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "5007e19fa9d4fd80"
+            ],
+            [
+                "a38dbfb333eae712"
+            ],
+            [
+                "f17b074a30b14239"
+            ]
+        ]
+    },
+    {
+        "id": "68a082285d0c4a3d",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "",
+        "events": "all",
+        "x": 760,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db7f05c3fbde8131",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "go to Timer page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"Timer\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "68a082285d0c4a3d"
+            ]
+        ]
+    },
+    {
+        "id": "df04f92b22ed44c4",
+        "type": "delay",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "db7f05c3fbde8131"
+            ]
+        ]
+    },
+    {
+        "id": "9375d4fe147c7f36",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "group": "1bc6b87e832eb6b6",
+        "order": 11,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "16",
+        "color": "#fafafa",
+        "x": 810,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "90b8cf0909a229ac",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "function 8",
+        "func": "if (msg.payload === \"pressed\"){\n\n    msg.payload =\"Rent Successfully ✅\";\n\n}\n\n return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "a2ede7231478457e",
+                "c7119044dc6864d4"
+            ]
+        ]
+    },
+    {
+        "id": "fdb8b760fd049537",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "function 9",
+        "func": "msg.payload =\" \";\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 600,
+        "wires": [
+            [
+                "9375d4fe147c7f36"
+            ]
+        ]
+    },
+    {
+        "id": "a2ede7231478457e",
+        "type": "delay",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 500,
+        "y": 600,
+        "wires": [
+            [
+                "fdb8b760fd049537"
+            ]
+        ]
+    },
+    {
+        "id": "c7119044dc6864d4",
+        "type": "link out",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "1823ce06ef9a53a3"
+        ],
+        "x": 455,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "1823ce06ef9a53a3",
+        "type": "link in",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "link in 2",
+        "links": [
+            "c7119044dc6864d4"
+        ],
+        "x": 695,
+        "y": 660,
+        "wires": [
+            [
+                "9375d4fe147c7f36"
+            ]
+        ]
+    },
+    {
+        "id": "03c9aed2f4b0097f",
+        "type": "mqtt out",
+        "z": "42a50f2d16389950",
+        "g": "790eb8b66f3d228a",
+        "name": "Publisher(output)",
+        "topic": "test2",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "412f42ae1c3de129",
+        "x": 1290,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "32944eec190aea38",
+        "type": "mqtt in",
+        "z": "42a50f2d16389950",
+        "g": "790eb8b66f3d228a",
+        "name": "Subscriber(input)",
+        "topic": "test2",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "412f42ae1c3de129",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 560,
+        "wires": [
+            [
+                "61679e04019be540"
+            ]
+        ]
+    },
+    {
+        "id": "61679e04019be540",
+        "type": "debug",
+        "z": "42a50f2d16389950",
+        "g": "790eb8b66f3d228a",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2d0cec252968acfb",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "g": "032a66b25930215e",
+        "name": "Gate topic",
+        "info": "",
+        "x": 1040,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "881146a32ea6a3f6",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "g": "032a66b25930215e",
+        "name": "Parking topic",
+        "info": "",
+        "x": 1050,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a38dbfb333eae712",
+        "type": "link out",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "2acbd1d6858c96f1"
+        ],
+        "x": 815,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5007e19fa9d4fd80",
+        "type": "link out",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "a8c647cf9afc16f1"
+        ],
+        "x": 815,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a8c647cf9afc16f1",
+        "type": "link in",
+        "z": "42a50f2d16389950",
+        "g": "b593a3ecc9b3f555",
+        "name": "link in 5",
+        "links": [
+            "5007e19fa9d4fd80"
+        ],
+        "x": 1045,
+        "y": 380,
+        "wires": [
+            [
+                "8f8fc35bd50608d0"
+            ]
+        ]
+    },
+    {
+        "id": "2acbd1d6858c96f1",
+        "type": "link in",
+        "z": "42a50f2d16389950",
+        "g": "790eb8b66f3d228a",
+        "name": "link in 6",
+        "links": [
+            "a38dbfb333eae712",
+            "adda3e64362544fe"
+        ],
+        "x": 1045,
+        "y": 640,
+        "wires": [
+            [
+                "03c9aed2f4b0097f"
+            ]
+        ]
+    },
+    {
+        "id": "b51f198557d60ad0",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "function 14",
+        "func": "var msg1 = {};\n\nif (msg.payload === \"pressed\") {\n    var currentValue = flow.get('gaugeValue') || 0;\n    currentValue += 1; \n    \n    flow.set('gaugeValue', currentValue);\n    \n    msg1.payload = currentValue; \n}\n\nreturn msg1;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "d0c0b15a3366a659"
+            ]
+        ]
+    },
+    {
+        "id": "f17b074a30b14239",
+        "type": "ui_toast",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "position": "dialog",
+        "displayTime": "2",
+        "highlight": "#51bf54",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 630,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4a20fa7cc5c4b9c",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "function 15",
+        "func": "var timestamp1 = flow.get(\"timestamp1\") || null;\nvar timestamp2 = flow.get(\"timestamp2\") || null;\n\nvar buttonPressed = context.get(\"buttonPressed\") || false;\nvar msg1 ={};\n\n//node.warn(\"Received topic: \" + msg.topic);\n//node.warn(\"Payload received: \" + msg.payload);\n\nif (msg.topic === \"num1\") {\n\n    if (!buttonPressed) {\n        timestamp1 = new Date(parseInt(msg.payload));\n        flow.set(\"timestamp1\", timestamp1);\n        context.set(\"buttonPressed\", true); \n        flow.set(\"start\",true);\n        node.warn(\"Timestamp 1 set: \" + timestamp1);\n    }\n    return null; \n}\n\nif (msg.topic === \"num2\") {\n    timestamp2 = new Date(parseInt(msg.payload));\n    flow.set(\"timestamp2\", timestamp2);\n    node.warn(\"Timestamp 2 set: \" + timestamp2);\n    \n    if (timestamp1 !== null && timestamp2 !== null) {\n        var timeDifferenceInMinutes = Math.floor((timestamp2.getTime() - timestamp1.getTime()) / (1000 * 60)); // to integer\n        \n        msg.payload = \"Rent duration: \" + timeDifferenceInMinutes + \" minutes\";\n        //node.warn(msg.payload);\n\n        \n        return [msg];\n    } else {\n        node.warn(\"One of the timestamps is null.\");\n    }\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "0",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1600,
+        "wires": [
+            [
+                "06fe01d33417858b"
+            ]
+        ]
+    },
+    {
+        "id": "06fe01d33417858b",
+        "type": "ui_toast",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Pay",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Finished!",
+        "name": "Finished!",
+        "x": 560,
+        "y": 1600,
+        "wires": [
+            [
+                "7df2bd50067194bf"
+            ]
+        ]
+    },
+    {
+        "id": "b06c66c3127e181e",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "",
+        "events": "all",
+        "x": 1020,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "141e1decaff91e91",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "go to Receipt page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"Receipt\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 1520,
+        "wires": [
+            [
+                "b06c66c3127e181e"
+            ]
+        ]
+    },
+    {
+        "id": "7df2bd50067194bf",
+        "type": "delay",
+        "z": "42a50f2d16389950",
+        "g": "9159e7f153a664f5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 740,
+        "y": 1600,
+        "wires": [
+            [
+                "141e1decaff91e91"
+            ]
+        ]
+    },
+    {
+        "id": "f640ace0219d9c59",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "total price",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1300,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "b6b47f1954c85268",
+        "type": "inject",
+        "z": "42a50f2d16389950",
+        "g": "13d1c849b6235fee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4888e3192e78739",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "13d1c849b6235fee",
+        "name": "function 17",
+        "func": "if(flow.get(\"timestamp2\") == new Date()){\n\n    return null;\n    \n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1760,
+        "wires": [
+            [
+                "e96edba1c69b5721",
+                "4a7e827083ffadc0"
+            ]
+        ]
+    },
+    {
+        "id": "6b45534ce0ffbefe",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "g": "ad50999df1d3bca6",
+        "name": "Timer",
+        "info": "",
+        "x": 150,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "226e215bfa2c15d9",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 9,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "end time",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1440,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "8f8595734a5c25ef",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Phone",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1290,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "1aae422567bd9e93",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "slot no:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1460,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "7437ef7eb0365997",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Date",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1450,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "73624ae7c2e2ad50",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.Name}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1290,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "808680f0655a8505",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 7,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "start time",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1300,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "c8d26fb0e51b261e",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "group": "bcbd8ec2892fee59",
+        "order": 11,
+        "width": 3,
+        "height": 3,
+        "name": "",
+        "label": "price x min +tax",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1320,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "83cb0ec6e2f010c7",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "",
+        "group": "bcbd8ec2892fee59",
+        "order": 16,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Pay",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1290,
+        "y": 1860,
+        "wires": [
+            [
+                "0d7e95fab5220af5"
+            ]
+        ]
+    },
+    {
+        "id": "a3db3f1397e2e77c",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "",
+        "group": "bcbd8ec2892fee59",
+        "order": 15,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Add Card",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1300,
+        "y": 1780,
+        "wires": [
+            [
+                "552feb0a0f35b6b4"
+            ]
+        ]
+    },
+    {
+        "id": "9520c98871825735",
+        "type": "ui_toast",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Supmit",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Enter CVV number",
+        "x": 1650,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d9d1493e4e628c3",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "",
+        "events": "all",
+        "x": 1680,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "552feb0a0f35b6b4",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "Credit Card page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"PaymentCard\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 1780,
+        "wires": [
+            [
+                "8d9d1493e4e628c3"
+            ]
+        ]
+    },
+    {
+        "id": "e96edba1c69b5721",
+        "type": "debug",
+        "z": "42a50f2d16389950",
+        "g": "ad50999df1d3bca6",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "4a7e827083ffadc0",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "13d1c849b6235fee",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1760,
+        "wires": [
+            [
+                "9eecc8618d205df1"
+            ]
+        ]
+    },
+    {
+        "id": "0d7e95fab5220af5",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "function 18",
+        "func": "var CVV =parseInt(msg.payload) ;\nvar cardCVV =global.get(\"CVV\");\n\nvar msg1={};\nvar msg2={};\nvar msg3={};\n\n\n\nif ((CVV === cardCVV)){\n    msg1.payload=\"Thank you!\";\n    msg.payload={\n        \"group\": \"SmartParkingSystem\"        \n    }\n    msg3.payload =global.get(\"gate\");\n    return [msg1,null,msg3]\n    \n}\nelse{\n    msg2.payload= \"Payment Failed\";\n    return [null, msg2,null]\n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 1860,
+        "wires": [
+            [
+                "d496b1dcb917e4f5",
+                "9520c98871825735",
+                "adda3e64362544fe"
+            ],
+            [
+                "d496b1dcb917e4f5",
+                "9520c98871825735"
+            ]
+        ]
+    },
+    {
+        "id": "9eb218f83594caf7",
+        "type": "comment",
+        "z": "42a50f2d16389950",
+        "g": "6fd87bbaef1b3caa",
+        "name": "Cedit Card page",
+        "info": "",
+        "x": 1940,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "c44ef09814f733a0",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "group": "0f30cfa4520d455b",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Payment amount",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1970,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "d881c9c5bbbd8e65",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "group": "0f30cfa4520d455b",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "20$",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "17",
+        "color": "#ffffff",
+        "x": 2130,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "4912f64d8dbc3c62",
+        "type": "ui_media",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "group": "0f30cfa4520d455b",
+        "name": "",
+        "width": 7,
+        "height": 1,
+        "order": 1,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1990,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73e8ebcf0ae2a9b4",
+        "type": "function",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "name": "function 19",
+        "func": "global.set(\"CVV\", msg.payload.CVV);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2150,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5dcdeaa0ec554a04",
+        "type": "ui_form",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "name": "",
+        "label": "",
+        "group": "0f30cfa4520d455b",
+        "order": 5,
+        "width": 7,
+        "height": 3,
+        "options": [
+            {
+                "label": "Name",
+                "value": "Name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Card",
+                "value": "Card",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Exp.Date",
+                "value": "Exp.Date",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "CVV",
+                "value": "CVV",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Name": "",
+            "Card": "",
+            "Exp.Date": "",
+            "CVV": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 1950,
+        "y": 1720,
+        "wires": [
+            [
+                "73e8ebcf0ae2a9b4",
+                "d61ec1abd901b55b",
+                "936a57b1019a1170"
+            ]
+        ]
+    },
+    {
+        "id": "d61ec1abd901b55b",
+        "type": "debug",
+        "z": "42a50f2d16389950",
+        "g": "6fd87bbaef1b3caa",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "936a57b1019a1170",
+        "type": "change",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "name": "Credit Card page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"tab\":\t    \"PaymentCard\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2150,
+        "y": 1680,
+        "wires": [
+            [
+                "5fa4ee27cadb3fc6"
+            ]
+        ]
+    },
+    {
+        "id": "5fa4ee27cadb3fc6",
+        "type": "ui_ui_control",
+        "z": "42a50f2d16389950",
+        "g": "d1b7688ca6311b30",
+        "name": "",
+        "events": "all",
+        "x": 2320,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "adda3e64362544fe",
+        "type": "link out",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "2acbd1d6858c96f1"
+        ],
+        "x": 1565,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "d496b1dcb917e4f5",
+        "type": "debug",
+        "z": "42a50f2d16389950",
+        "g": "bce86ffeb4a8a486",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1680,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "314f59b704e8a3fa",
+        "type": "ui_button",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "name": "",
+        "group": "af857bfc9ba965cc",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Login",
+        "tooltip": "",
+        "color": "#FFFFFF",
+        "bgcolor": "#666a6a",
+        "className": "",
+        "icon": "login",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 1220,
+        "wires": [
+            [
+                "89cd854e2cf35d33"
+            ]
+        ]
+    },
+    {
+        "id": "d43c529d55297ff3",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "867c52f0f0f6968a",
+        "group": "af857bfc9ba965cc",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Do you have account already!",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "13",
+        "color": "#ffffff",
+        "x": 470,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "75383c5e1b43e145",
+        "type": "ui_media",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "name": "",
+        "width": 3,
+        "height": 3,
+        "order": 8,
+        "category": "Images",
+        "file": "new.png",
+        "layout": "adjust",
+        "showcontrols": false,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1730,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cb30f6057a5ac0b",
+        "type": "ui_media",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "name": "",
+        "width": 3,
+        "height": 3,
+        "order": 4,
+        "category": "Images",
+        "file": "introPage-removebg-preview.png",
+        "layout": "adjust",
+        "showcontrols": false,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 2130,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b7f1ca1a6956777",
+        "type": "ui_media",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "name": "",
+        "width": 3,
+        "height": 3,
+        "order": 11,
+        "category": "Images",
+        "file": "1307847_160954-OV57A8-509-removebg-preview (1).png",
+        "layout": "adjust",
+        "showcontrols": false,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1930,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c7e596ffc3e3fbc",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "name": "1",
+        "label": "With ParkoRent, parking has become easy!",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "14",
+        "color": "#ffffff",
+        "x": 1570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ea038cc7bf954510",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "order": 5,
+        "width": 4,
+        "height": 2,
+        "name": "2",
+        "label": "Unlock a new level of convenience with our app                                      self-parking made easy with just a tap, plus a host of other great features!",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "12",
+        "color": "#919191",
+        "x": 1730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "471a66f9dde5d1d8",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "order": 9,
+        "width": 4,
+        "height": 2,
+        "name": "3",
+        "label": " Say goodbye to packed public parking.               Experience quick and easy parking at our private lot!",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Tahoma,Geneva,sans-serif",
+        "fontSize": "12",
+        "color": "#818383",
+        "x": 1930,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2ea935b77906a58f",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "bb78de1a02351e42",
+        "group": "658f1834264b562b",
+        "order": 13,
+        "width": 4,
+        "height": 2,
+        "name": "4",
+        "label": " No cash needed! With our easy app, just choose your parking time                                                        no hassle, no change. Simple!",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Tahoma,Geneva,sans-serif",
+        "fontSize": "12",
+        "color": "#818383",
+        "x": 2130,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "995d19155a7669d4",
+        "type": "ui_dropdown",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1bc6b87e832eb6b6",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "6",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "7",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "8",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "9",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "10",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "11",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "12",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "13",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "14",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "15",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "16",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "17",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "18",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "19",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "20",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "21",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "22",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "23",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "24",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 360,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88a765f6082db9d3",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "group": "1bc6b87e832eb6b6",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "How many hours:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "16",
+        "color": "#fafafa",
+        "x": 190,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b605e12c392a78f8",
+        "type": "ui_text",
+        "z": "42a50f2d16389950",
+        "g": "43c7d91b12f4cec8",
+        "group": "1bc6b87e832eb6b6",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Empty lots",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "16",
+        "color": "#fafafa",
+        "x": 170,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7b6cacb378fd6fc5",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "af857bfc9ba965cc",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "72e3c322b1207bb3",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "bcbd8ec2892fee59",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "21e2c4af1df71739",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "bcbd8ec2892fee59",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "76688e9f924b95db",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "bcbd8ec2892fee59",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "02a2926fa59cf9da",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "bcbd8ec2892fee59",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "171341a947decd68",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "bcbd8ec2892fee59",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "280536c1cffd1bf6",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "bcbd8ec2892fee59",
+        "order": 13,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "5557bbdf819fb6d3",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "0f30cfa4520d455b",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7aee060ffaa927e8",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "0f30cfa4520d455b",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a77fba2704247e7e",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "0f30cfa4520d455b",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c244f9da28309db0",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "0f30cfa4520d455b",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8fec0eee751d600c",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d50aff9f7f05386b",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "42be2a6c29ef42e5",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 6,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "61b5eccd1d7826ea",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f03f87713770840b",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e80173273df8078b",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "5b1d8522acff6aa5",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "1bc6b87e832eb6b6",
+        "order": 13,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "de48fe80d7a79649",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "c41847131a682758",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b4616f2d3425155a",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0124196934c146d5",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "81a660ba0ce9d7df",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c4efd8a80410d93e",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "772433e3cf21ca32",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2e1893439397e75b",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3c15cf7e26339b19",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9641b07dd36e72fb",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b75f1415051d5f96",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fa4d87c24630a550",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 15,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "a5cc212140249c04",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "b556df43cf2d43db",
+        "order": 16,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b6518512e8799c0e",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "658f1834264b562b",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "8636626c9e58cf42",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "658f1834264b562b",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a7e3dd86f3c049a6",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "658f1834264b562b",
+        "order": 10,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "90e881a540052d17",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "658f1834264b562b",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0b7b66caa546d3ca",
+        "type": "ui_spacer",
+        "z": "42a50f2d16389950",
+        "name": "spacer",
+        "group": "658f1834264b562b",
+        "order": 7,
+        "width": "4",
+        "height": "1"
+    },
+    {
+        "id": "45dd704ece548330",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "5db4f089c8d57cf2",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "af857bfc9ba965cc",
+        "type": "ui_group",
+        "name": "SignUp",
+        "tab": "cebb34ed384097cf",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b556df43cf2d43db",
+        "type": "ui_group",
+        "name": "Timer",
+        "tab": "1ec6da096958a7d8",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "658f1834264b562b",
+        "type": "ui_group",
+        "name": "ParkoRent",
+        "tab": "f61d716a697308d6",
+        "order": 1,
+        "disp": false,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b3db229fa503a391",
+        "type": "remote-config",
+        "name": "PPark",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "3n4qjq1qm57ulxmchu6q7dq3tw5kaqmwwd6xk0x46urk3qy9s7we8t4j6tkj1ne0",
+        "server": "nodered04.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "412f42ae1c3de129",
+        "type": "mqtt-broker",
+        "name": "broker",
+        "broker": "1322cf6d05024ba19612e7ffcaa0de21.s1.eu.hivemq.cloud:8883",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "TestTest",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1bc6b87e832eb6b6",
+        "type": "ui_group",
+        "name": "Parking Slots",
+        "tab": "a667a7a6b9cdac8f",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bcbd8ec2892fee59",
+        "type": "ui_group",
+        "name": "Your Receipt",
+        "tab": "676a1c91acd5024b",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0f30cfa4520d455b",
+        "type": "ui_group",
+        "name": "Card",
+        "tab": "61f1335b61bcbff0",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5db4f089c8d57cf2",
+        "type": "ui_tab",
+        "name": "Login",
+        "icon": "login",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cebb34ed384097cf",
+        "type": "ui_tab",
+        "name": "SignUp",
+        "icon": "login",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1ec6da096958a7d8",
+        "type": "ui_tab",
+        "name": "Timer",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f61d716a697308d6",
+        "type": "ui_tab",
+        "name": "ParkoRent",
+        "icon": "directions_car",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a667a7a6b9cdac8f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "676a1c91acd5024b",
+        "type": "ui_tab",
+        "name": "Receipt",
+        "icon": "receipt",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "61f1335b61bcbff0",
+        "type": "ui_tab",
+        "name": "PaymentCard",
+        "icon": "credit_card",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    }
+]
