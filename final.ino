@@ -119,7 +119,7 @@ const float alpha = 0.98;
 
 typedef void (*TurnDirectionFunc)(int speed);
 long distance = 0;
-unsigned long maxAdjustmentTimeMs = 3000;
+unsigned long maxAdjustmentTimeMs = 2000;
 
 void setup(void) {
     Serial.begin(115200);
@@ -300,14 +300,13 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 
 void updatedSlotPark(float forwardThreshold, float wallThreshold, float margin, int workingSpeed, int adjustmentSpeed, int turningDirection) {
-    Serial.println("Car Parked Successfully...");
     float forwardAvg = getAverageDistance(forwardUltra, 10);
     float forwardRightAvg = getAverageDistance(forwardRightUltra, 10);
     float forwardLeftAvg = getAverageDistance(forwardLeftUltra, 10);
     float rightLeftDifference = forwardRightAvg - forwardLeftAvg;
     printAllDistances(forwardAvg, forwardRightAvg, forwardLeftAvg);
     
-    delay(1000);
+    delay(200);
     carMoveForward(workingSpeed);
 
     while (true) {
@@ -326,7 +325,6 @@ void updatedSlotPark(float forwardThreshold, float wallThreshold, float margin, 
                 turnAngle(workingSpeed, 60, carMoveRight);
             }
 
-            // adjustCarPosition(margin, adjustmentSpeed);
 
             Serial.println("Car Moves toward the wall to park...");
             carMoveForward( workingSpeed );
@@ -349,7 +347,6 @@ void updatedSlotPark(float forwardThreshold, float wallThreshold, float margin, 
 
 void updatedSlotUnPark(float backwardThreshold, float wallThreshold, float margin, int workingSpeed, int adjustmentSpeed, int turningDirection) {
 
-    Serial.println("Car Un Parked Successfully...");
     adjustCarPosition(margin, adjustmentSpeed);
 
     float backwardAvg = getAverageDistance(forwardUltra, 10);
@@ -359,7 +356,7 @@ void updatedSlotUnPark(float backwardThreshold, float wallThreshold, float margi
     float backAVG=0;
     printAllDistances(backwardAvg, backwardRightAvg, backwardLeftAvg);
     
-    delay(1000);
+    delay(200);
     carMoveBackward(workingSpeed);
 
     while (true) {
@@ -377,13 +374,12 @@ void updatedSlotUnPark(float backwardThreshold, float wallThreshold, float margi
                 turnAngle(workingSpeed, 90, carMoveRight);
             }
 
-            delay(1000);
+            delay(500);
             Serial.println("Car Moves toward the Gate to Exit ...");
             carMoveForward(workingSpeed-20);
 
             // Check if the car is parked
             while (true) {
-                // float forwardAvg = getAverageDistance(forwardUltra, 10);
                 float backwardRightAVG = getAverageDistance(backwardRightUltra, 10);
                 float backwardLeftAVG = getAverageDistance(backwardLeftUltra, 10);
                 float backAVG = (backwardLeftAVG+backwardRightAVG)/2;
@@ -425,10 +421,9 @@ void adjustCarPosition(float margin, int maxSpeed) {
             rightLeftDifference = forwardRightAvg - forwardLeftAvg;
             printAllDistances(rightLeftDifference, forwardRightAvg, forwardLeftAvg);
 
-            // Proportional control: adjust speed based on the magnitude of the difference
-            int adjustmentSpeed = map(fabs(rightLeftDifference), 0, 50, minSpeed, maxSpeed); // Ensuring speed is above minSpeed
-
-            // Ensure the adjustment speed is above the motor's operating threshold
+            // Adjust speed based on the magnitude of the difference
+            // Ensuring speed is above minSpeed
+            int adjustmentSpeed = map(fabs(rightLeftDifference), 0, 50, minSpeed, maxSpeed); 
             adjustmentSpeed = max(adjustmentSpeed, minSpeed);
 
             if (rightLeftDifference > 0) {
@@ -446,7 +441,7 @@ void adjustCarPosition(float margin, int maxSpeed) {
             }
 
             // Adding a delay to prevent rapid switching
-            delay(100);  // Adjust the delay time based on how fast the car moves
+            delay(100);
         }
     }
 
