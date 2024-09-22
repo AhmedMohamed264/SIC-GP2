@@ -14,7 +14,7 @@ const char* mqttUser = "omar2003";
 const char* mqttPassword = "12345678@Nu";
 const char* mqttTopic = "gate";  
 
-// Root CA certificate
+// CA certificate
 static const char *root_ca PROGMEM = R"EOF(
 -----BEGIN CERTIFICATE-----
 MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw
@@ -52,7 +52,7 @@ emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
 WiFiClientSecure espClient;
 PubSubClient client(espClient);
 
-// Define sensor pins
+// sensors pins
 const int ldr_pins[2] = {34, 35}; 
 const int gateServoPin = 18;      
 Servo gateServo;                  
@@ -71,7 +71,7 @@ void setup() {
     pinMode(ldr_pins[i], INPUT);
   }
   gateServo.attach(gateServoPin);
-  gateServo.write(0); // Start with gate closed
+  gateServo.write(0); 
 }
 
 void loop() {
@@ -128,7 +128,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 void handleGateOperation() {
   Serial.println("Handling gate operation...");
 
-  // Read LDR values
+  
   int ldrValue1 = analogRead(ldr_pins[0]);
   int ldrValue2 = analogRead(ldr_pins[1]);
 
@@ -138,17 +138,19 @@ void handleGateOperation() {
   Serial.println(ldrValue2);
   
   if (ldrValue1 < 3000 || ldrValue2 < 3000) {
+     // Open gate
+    
     Serial.println("Object detected, opening gate...");
     for (int angle = 0; angle <= 90; angle += 10) {
         gateServo.write(angle);  // Open gate
         delay(100);  // Wait for the servo to move
       }
-
+       //publish to the car to move 
          const char* topic = "parking";
          const char* message = "5";
          client.publish(topic, message);
- // Open gate
-    delay(3000);  // Allow gate to open
+        
+    delay(3000);  
 
     // Check for detection to close gate
     while (true) {
@@ -163,9 +165,9 @@ void handleGateOperation() {
         Serial.println("No object detected, closing gate...");
          for (int angle = 90; angle >= 0; angle -= 10) {
             gateServo.write(angle);  // Close gate
-            delay(100);  // Wait for the servo to move
+            delay(100);  
           }  // Close gate
-        delay(2000);  // Allow gate to close
+        delay(2000); 
         break;
       }
       delay(500);
