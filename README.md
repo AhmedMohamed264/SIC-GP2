@@ -9,20 +9,25 @@
    - [Node-RED Integration](#node-red-integration)
    - [MQTT Communication](#mqtt-communication)
    - [Automation and Flow](#automation-and-low)
+   - [Flow Chart and Circuit Diagram](#wiring)
 3. [Car Parking and Unparking System](#car-parking-and-unparking-system)
 	- [System Components](#system_components)
 	- [Sensors and Modules](#sensors-and-modules)
 	- [ESP32 Communication Module](#ESP32-Communication-Module)
 	- [Motion Control](#motion-control)
+	- [Circuit Diagram](#circuitDiagram)
+	- [Test Cases](#testCases)
 4. [Node-RED Integration](#node-red-integration-1)
 	- [Why Node-RED](#Why-Node-RED)
 	- [Node-RED's Key Role](#Node-REDs-Key-Role)
+	- [Dashboard](#dashboard)
 5. [YOLO Object Detection Model](#yolo-object-detection-model)
 	- [Purpose](#purpose)
 	- [Components](#components)
 	- [Software](#software)
 
 
+// https://youtu.be/CYcJuRovkP8
 
 ## Overview <a name="overview"></a>
 The valet parking application is a smart, IoT-based system designed to automate the process of parking, monitoring, and managing vehicles within a garage. The system utilizes various hardware components `(sensors, motors, ESP32, etc.)` and software frameworks `(Node-RED, MQTT, YOLO)` to ensure seamless communication, real-time monitoring, and user-friendly control. The overall goal is to streamline the parking experience, minimize human intervention, and ensure efficient space management.
@@ -120,6 +125,12 @@ The ESP32 can communicate with a mobile app through MQTT to send the vehicle sta
 * **Safety Mechanisms:**
 	* Safety systems prevent the gate from closing if a vehicle or object is detected in its path. Ultrasonic sensors or infrared beams can be used for this.
 
+### 1.7 Flow Chart and Circuit Diagram <a name="wiring"></a>
+
+![Image Alt Text](./snaps/flowChart.png)
+
+![Image Alt Text](./snaps/Gate.png)
+
 
 ## **2. Car Parking and Unparking System** <a name="car-parking-and-unparking-system"></a>
 
@@ -154,6 +165,20 @@ The ESP32 can communicate with a mobile app through MQTT to send the vehicle sta
 	
 	* Uses MQTT to receive parking slot information, allowing remote control of parking operations.
 
+### 2.5 Circuit Diagram <a name="circuitDiagram"></a> 
+
+![Image Alt Text](./snaps/car.png)
+
+### 2.6 Test Cases <a name="testCases"></a> 
+
+[Watch the full video](https://www.youtube.com/watch?v=CYcJuRovkP8)
+
+
+[Watch the full video](https://www.youtube.com/watch?v=_n1Wrl0G9So)
+
+
+[Watch the full video](https://www.youtube.com/watch?v=YUisAIvJwxE)
+
 
 ## **3. Node-RED Integration** <a name="node-red-integration-1"></a> 
 
@@ -176,6 +201,11 @@ The ESP32 can communicate with a mobile app through MQTT to send the vehicle sta
 
 * **Notifications:**
 	* The system can send SMS or email alerts to users when the garage is full, when the car has parked, or when their parking time has expired.
+
+### 3.3 Dashboard <a name="dashboard"></a>
+
+![Image Alt Text](./snaps/userInterface.jpeg)
+
 
 ## **4. YOLO Object Detection Model** <a name="yolo-object-detection-model"></a>
 

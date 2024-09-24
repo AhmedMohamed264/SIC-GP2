@@ -81,12 +81,14 @@ PubSubClient client(espClient);
 #define SLOT_TWO                2
 #define SLOT_THREE              3
 
-int slotsArray[4] = {1, 1, 1, 1};
-
+#define AVG_DISTANCE			5
 int parkedSlot = UNPARKED;
 int carState = CAR_STOP;
 
-int locSpeed = 150;
+int slotsArray[4] = {1, 1, 1, 1};
+int maxAdjustmentTimeMs = 2000;
+int adjustmentSpeed = 255;
+int workingSpeed = 150;
 int minSpeed = 100;
 
 L298N motor1(PWMA, AIN1, AIN2);
@@ -121,7 +123,6 @@ const float alpha = 0.98;
 
 typedef void (*TurnDirectionFunc)(int speed);
 long distance = 0;
-unsigned long maxAdjustmentTimeMs = 2000;
 
 void setup(void) {
     Serial.begin(115200);
@@ -155,6 +156,25 @@ void setup(void) {
     connectToMQTT();
 }
 
+void checkObstacleTooClose() {
+	float margin = 5;
+	float forwardAvg = getAverageDistance(forwardUltra, AVG_DISTANCE);
+    float forwardRightAvg = getAverageDistance(forwardRightUltra, AVG_DISTANCE);
+    float forwardLeftAvg = getAverageDistance(forwardLeftUltra, AVG_DISTANCE);
+	float backwardRightAVG = getAverageDistance(backwardRightUltra, AVG_DISTANCE);
+    float backwardLeftAVG = getAverageDistance(backwardLeftUltra, AVG_DISTANCE);
+
+    if (forwardDistance < margin || forwardRightDistance < margin || forwardLeftDistance < margin || 
+		backwardRightDistance < margin || backwardLeftDistance < margin) {
+        Serial.println("Obstacle too close! Stopping car.");
+        carStop();
+		checkObstacleTooClose();	
+    }
+	else {
+		return;
+	}
+}
+
 int getAvailableSlot() {
 	for(int i=0 ; i<4 ; i++) {
 		if(slotsArray[i] == 1)
@@ -166,60 +186,72 @@ int getAvailableSlot() {
 void unPark(int parkingSlot) {
     switch(parkingSlot) {
         case SLOT_ZERO :
-            Serial.println("\nCar un Parking now from slot 0 ...");
-            updatedSlotUnPark(30, 40, 1, 150, 255, CAR_TURN_RIGHT);
-            slotsArray[0] = 1;
-            carStop(); 
-            break;
+            unParkSlot_0(); break;
 
         case SLOT_ONE :
-            Serial.println("\nCar un Parking now from slot 1 ...");
-            updatedSlotUnPark(30, 19, 1, 120, 120, CAR_TURN_LEFT);
-            slotsArray[1] = 1;
-            carStop(); 
-            break;
+			unParkSlot_1(); break;
 
         case SLOT_TWO :
-            Serial.println("\nCar un Parking now from slot 2 ...");
-            updatedSlotUnPark(30, 40, 1, 150, 255, CAR_TURN_RIGHT);
-            slotsArray[1] = 1;
-            carStop(); 
-            break;
+            unParkSlot_2(); break;
 
         case SLOT_THREE :
-            Serial.println("\nCar un Parking now from slot 3 ...");
-            updatedSlotUnPark(30, 40, 1, 150, 255, CAR_TURN_LEFT);
-            slotsArray[1] = 1;
-            carStop(); 
-            break;
+            unParkSlot_3(); break;
     }
 
     parkingSlot = UNPARKED;
 }
 
+void unParkSlot_0() {
+	Serial.println("\nCar un Parking now from slot 0 ...");
+	updatedSlotUnPark(30, 40, 1, workingSpeed, adjustmentSpeed, CAR_TURN_RIGHT);
+	slotsArray[0] = 1;
+	carStop(); 
+}
+
+void unParkSlot_1() {
+	Serial.println("\nCar un Parking now from slot 1 ...");
+	updatedSlotUnPark(30, 19, 1, workingSpeed, adjustmentSpeed, CAR_TURN_LEFT);
+	slotsArray[1] = 1;
+	carStop();
+}
+
+void unParkSlot_2() {
+	Serial.println("\nCar un Parking now from slot 2 ...");
+	updatedSlotUnPark(30, 40, 1, workingSpeed, adjustmentSpeed, CAR_TURN_RIGHT);
+	slotsArray[1] = 1;
+	carStop(); 
+}
+
+void unParkSlot_3() {
+	Serial.println("\nCar un Parking now from slot 3 ...");
+	updatedSlotUnPark(30, 40, 1, workingSpeed, adjustmentSpeed, CAR_TURN_LEFT);
+	slotsArray[1] = 1;
+	carStop(); 
+}
+
 void parkingSlot_0() {
-    updatedSlotPark(15, 10, 1, 150, 255, CAR_TURN_RIGHT);
+    updatedSlotPark(15, 10, 1, workingSpeed, adjustmentSpeed, CAR_TURN_RIGHT);
     parkedSlot = SLOT_ZERO;
     slotsArray[0] = 0;
     Serial.println("Car Parked Successfully at slot 0 ...");
 }
 
 void parkingSlot_1() {
-    updatedSlotPark(25, 16, 1, 130, 100, CAR_TURN_LEFT);
+    updatedSlotPark(25, 16, 1, workingSpeed, adjustmentSpeed, CAR_TURN_LEFT);
     parkedSlot = SLOT_ONE;
     slotsArray[1] = 0;
     Serial.println("Car Parked Successfully at slot 1 ...");
 }
 
 void parkingSlot_2() {
-    updatedSlotPark(40, 15, 1, 150, 255, CAR_TURN_RIGHT);
+    updatedSlotPark(40, 15, 1, workingSpeed, adjustmentSpeed, CAR_TURN_RIGHT);
     parkedSlot = SLOT_TWO;
     slotsArray[2] = 0;
     Serial.println("Car Parked Successfully at slot 2 ...");
 }
 
 void parkingSlot_3() {
-    updatedSlotPark(50, 40, 1, 150, 255, CAR_TURN_LEFT);
+    updatedSlotPark(50, 40, 1, workingSpeed, adjustmentSpeed, CAR_TURN_LEFT);
     parkedSlot = SLOT_THREE;
     slotsArray[3] = 0;
     Serial.println("Car Parked Successfully at slot 3 ...");
@@ -232,45 +264,30 @@ void loop() {
     client.loop();
 }
 
-void slotOneParkUnPark() {
-    parkingSlot_1();
-    delay(1000);
-    updatedSlotUnPark(27, 19, 1, 120, 120, CAR_TURN_LEFT);
-    delay(1000);
-    while(1);
-}
-
-void slotThreeParkUnPark() {
-    parkingSlot_3();
-    delay(1000);
-    updatedSlotUnPark(25, 30, 1, 150, 150, CAR_TURN_LEFT);
-    delay(1000);
-    while(1);
-}
-
 void connectToMQTT() {
-  Serial.print("Connecting to MQTT Broker: ");
-  Serial.println(mqttServer);
+	Serial.print("Connecting to MQTT Broker: ");
+	Serial.println(mqttServer);
 
-  // Attempt to connect
-  while (!client.connected()) {
-    if (client.connect("ESP32Client", mqttUser, mqttPassword)) {
-      Serial.println("Connected to MQTT Broker successfully!");
-      
-      // Subscribe to the topic
-      if (client.subscribe(mqttTopic)) {
-        Serial.print("Subscribed to topic: ");
-        Serial.println(mqttTopic);
-      } else {
-        Serial.println("Failed to subscribe to topic.");
-      }
-    } else {
-      Serial.print("Failed to connect. State: ");
-      Serial.print(client.state());
-      Serial.println(" Retrying in 5 seconds...");
-      delay(5000);
-    }
-  }
+	while (!client.connected()) {
+		if (client.connect("ESP32Client", mqttUser, mqttPassword)) {
+			Serial.println("Connected to MQTT Broker successfully!");
+			
+			if (client.subscribe(mqttTopic)) {
+				Serial.print("Subscribed to topic: ");
+				Serial.println(mqttTopic);
+			} 
+
+			else {
+				Serial.println("Failed to subscribe to topic.");
+			}
+		} 
+		else {
+			Serial.print("Failed to connect. State: ");
+			Serial.print(client.state());
+			Serial.println(" Retrying in 5 seconds...");
+			delay(5000);
+		}
+	}
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
@@ -278,15 +295,12 @@ void callback(char* topic, byte* payload, unsigned int length) {
     Serial.println(topic);
     Serial.print("Message : ");
     
-    // Convert the payload to a string to handle multi-character messages like "exit"
     String message = "";
-    for (int i = 0; i < length; i++) 
-    {
+    for (int i = 0; i < length; i++) {
         message += (char)payload[i];
-        Serial.print((char)payload[i]); // Print the message as it's received
+        Serial.print((char)payload[i]);
     }
 
-    // Switch case or conditional checks to handle the message
     if (message == "0") {
         Serial.println("\nAction for message '0'");
         parkingSlot_0();
@@ -304,12 +318,14 @@ void callback(char* topic, byte* payload, unsigned int length) {
         parkingSlot_3();
     } 
     else if (message == "4") {
+        Serial.println("\nAction for message '4'");
         unPark(parkedSlot);
     } 
     else if (message == "5") {
+        Serial.println("\nAction for message '5'");
         carMoveForward(120);
         Serial.println("\nCar Leaves the Parking ...");
-        delay(1000);
+        delay(200);
         carStop();
     } 
     else {
@@ -318,17 +334,15 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 
 void updatedSlotPark(float forwardThreshold, float wallThreshold, float margin, int workingSpeed, int adjustmentSpeed, int turningDirection) {
-    float forwardAvg = getAverageDistance(forwardUltra, 10);
-    float forwardRightAvg = getAverageDistance(forwardRightUltra, 10);
-    float forwardLeftAvg = getAverageDistance(forwardLeftUltra, 10);
-    float rightLeftDifference = forwardRightAvg - forwardLeftAvg;
-    printAllDistances(forwardAvg, forwardRightAvg, forwardLeftAvg);
+
+    float forwardAvg, forwardRightAvg, forwardLeftAvg; rightLeftDifference;
     
     delay(200);
     carMoveForward(workingSpeed);
 
     while (true) {
-        forwardAvg = getAverageDistance(forwardUltra, 10);
+		checkObstacleTooClose();
+        forwardAvg = getAverageDistance(forwardUltra, AVG_DISTANCE);
         printDistance(forwardAvg);
 
         if (forwardAvg < forwardThreshold) {
@@ -349,8 +363,9 @@ void updatedSlotPark(float forwardThreshold, float wallThreshold, float margin, 
 
             // Check if the car is parked
             while (true) {
-                forwardAvg = getAverageDistance(forwardUltra, 10);
-                printDistance(forwardAvg);
+				checkObstacleTooClose();
+                forwardAvg = getAverageDistance(forwardUltra, AVG_DISTANCE);
+                // printDistance(forwardAvg);
 
                 if (forwardAvg < wallThreshold) {
                     carStop();
@@ -366,21 +381,17 @@ void updatedSlotPark(float forwardThreshold, float wallThreshold, float margin, 
 void updatedSlotUnPark(float backwardThreshold, float wallThreshold, float margin, int workingSpeed, int adjustmentSpeed, int turningDirection) {
 
     adjustCarPosition(margin, adjustmentSpeed);
-
-    float backwardAvg = getAverageDistance(forwardUltra, 10);
-    float backwardRightAvg = getAverageDistance(forwardRightUltra, 10);
-    float backwardLeftAvg = getAverageDistance(forwardLeftUltra, 10);
-    float rightLeftDifference = backwardRightAvg - backwardLeftAvg;
-    float backAVG=0;
-    printAllDistances(backwardAvg, backwardRightAvg, backwardLeftAvg);
+	float forwardAvg, forwardRightAvg, forwardLeftAvg; rightLeftDifference;
     
     delay(200);
+	checkObstacleTooClose();
     carMoveBackward(workingSpeed);
 
     while (true) {
-        backwardAvg = getAverageDistance(forwardUltra, 10);
+		checkObstacleTooClose();
+        backwardAvg = getAverageDistance(forwardUltra, AVG_DISTANCE);
         if (backwardAvg > backwardThreshold) {
-            Serial.println("Car Reached...");
+            Serial.println("Car Reached ...");
 
             // Turn 90 degrees based on the parameter
             if (CAR_TURN_LEFT == turningDirection) {
@@ -392,16 +403,15 @@ void updatedSlotUnPark(float backwardThreshold, float wallThreshold, float margi
                 turnAngle(workingSpeed, 90, carMoveRight);
             }
 
-            delay(500);
+            delay(200);
             Serial.println("Car Moves toward the Gate to Exit ...");
             carMoveForward(workingSpeed-20);
 
             // Check if the car is parked
             while (true) {
-                float backwardRightAVG = getAverageDistance(backwardRightUltra, 10);
-                float backwardLeftAVG = getAverageDistance(backwardLeftUltra, 10);
+                float backwardRightAVG = getAverageDistance(backwardRightUltra, AVG_DISTANCE);
+                float backwardLeftAVG = getAverageDistance(backwardLeftUltra, AVG_DISTANCE);
                 float backAVG = (backwardLeftAVG+backwardRightAVG)/2;
-                printDistance(backAVG);
 
                 if (backAVG > wallThreshold) {
                     carStop();
@@ -414,40 +424,37 @@ void updatedSlotUnPark(float backwardThreshold, float wallThreshold, float margi
 }
 
 void adjustCarPosition(float margin, int maxSpeed) {
-    Serial.println("\nNow Car will make adjustments...");
+    
+	Serial.println("\nNow Car will make adjustments...");
 
-    float forwardRightAvg = getAverageDistance(forwardRightUltra, 10);
-    float forwardLeftAvg = getAverageDistance(forwardLeftUltra, 10);
+    float forwardRightAvg = getAverageDistance(forwardRightUltra, AVG_DISTANCE);
+    float forwardLeftAvg = getAverageDistance(forwardLeftUltra, AVG_DISTANCE);
     float rightLeftDifference = forwardRightAvg - forwardLeftAvg;
-    printAllDistances(rightLeftDifference, forwardRightAvg, forwardLeftAvg);
+    // printAllDistances(rightLeftDifference, forwardRightAvg, forwardLeftAvg);
 
-    // Sensor data validation
     if (forwardRightAvg < 0 || forwardLeftAvg < 0 || forwardRightAvg > 400 || forwardLeftAvg > 400) {
         Serial.println("Error: Sensor data out of range, stopping adjustment.");
         carStop();
         return;
     }
 
-    // Proportional adjustment based on distance difference
     if (fabs(rightLeftDifference) > margin) {
         unsigned long startTime = millis();
         
-        // Continue adjustment until car is centered or time limit is exceeded
         while (fabs(rightLeftDifference) > margin) {
-            forwardRightAvg = getAverageDistance(forwardRightUltra, 10);
-            forwardLeftAvg = getAverageDistance(forwardLeftUltra, 10);
+            forwardRightAvg = getAverageDistance(forwardRightUltra, AVG_DISTANCE);
+            forwardLeftAvg = getAverageDistance(forwardLeftUltra, AVG_DISTANCE);
             rightLeftDifference = forwardRightAvg - forwardLeftAvg;
-            printAllDistances(rightLeftDifference, forwardRightAvg, forwardLeftAvg);
+            // printAllDistances(rightLeftDifference, forwardRightAvg, forwardLeftAvg);
 
-            // Adjust speed based on the magnitude of the difference
-            // Ensuring speed is above minSpeed
             int adjustmentSpeed = map(fabs(rightLeftDifference), 0, 50, minSpeed, maxSpeed); 
             adjustmentSpeed = max(adjustmentSpeed, minSpeed);
 
             if (rightLeftDifference > 0) {
                 Serial.println("Adjusting to the left");
                 carMoveLeft(adjustmentSpeed);
-            } else {
+            } 
+			else {
                 Serial.println("Adjusting to the right");
                 carMoveRight(adjustmentSpeed);
             }
@@ -458,7 +465,6 @@ void adjustCarPosition(float margin, int maxSpeed) {
                 break;
             }
 
-            // Adding a delay to prevent rapid switching
             delay(100);
         }
     }
@@ -536,16 +542,6 @@ float calculateYawDifference(float startYaw, float currentYaw) {
     return diff;
 }
 
-void mpuInit() {
-    if (!mpu.begin()) {
-        Serial.println("MPU6050 not found!");
-        while (1);
-    }
-    mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
-    mpu.setGyroRange(MPU6050_RANGE_500_DEG);
-    mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
-}
-
 float mpuGetYAW() {
     unsigned long currentTime = millis();
     float dt = (currentTime - lastTime) / 1000.0;
@@ -555,6 +551,16 @@ float mpuGetYAW() {
 
     yaw += (g.gyro.z * 180.0 / PI) * dt;
     return normalizeYaw(yaw);
+}
+
+void mpuInit() {
+    if (!mpu.begin()) {
+        Serial.println("MPU6050 not found!");
+        while (1);
+    }
+    mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+    mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+    mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
 }
 
 void carMoveForward(int speed) {
