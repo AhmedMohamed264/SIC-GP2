@@ -81,6 +81,8 @@ PubSubClient client(espClient);
 #define SLOT_TWO                2
 #define SLOT_THREE              3
 
+int slotsArray[4] = {1, 1, 1, 1};
+
 int parkedSlot = UNPARKED;
 int carState = CAR_STOP;
 
@@ -153,29 +155,41 @@ void setup(void) {
     connectToMQTT();
 }
 
+int getAvailableSlot() {
+	for(int i=0 ; i<4 ; i++) {
+		if(slotsArray[i] == 1)
+			return i;
+	}
+	return -1;
+}
+
 void unPark(int parkingSlot) {
     switch(parkingSlot) {
         case SLOT_ZERO :
             Serial.println("\nCar un Parking now from slot 0 ...");
             updatedSlotUnPark(30, 40, 1, 150, 255, CAR_TURN_RIGHT);
+            slotsArray[0] = 1;
             carStop(); 
             break;
 
         case SLOT_ONE :
             Serial.println("\nCar un Parking now from slot 1 ...");
             updatedSlotUnPark(30, 19, 1, 120, 120, CAR_TURN_LEFT);
+            slotsArray[1] = 1;
             carStop(); 
             break;
 
         case SLOT_TWO :
             Serial.println("\nCar un Parking now from slot 2 ...");
             updatedSlotUnPark(30, 40, 1, 150, 255, CAR_TURN_RIGHT);
+            slotsArray[1] = 1;
             carStop(); 
             break;
 
         case SLOT_THREE :
             Serial.println("\nCar un Parking now from slot 3 ...");
             updatedSlotUnPark(30, 40, 1, 150, 255, CAR_TURN_LEFT);
+            slotsArray[1] = 1;
             carStop(); 
             break;
     }
@@ -186,24 +200,28 @@ void unPark(int parkingSlot) {
 void parkingSlot_0() {
     updatedSlotPark(15, 10, 1, 150, 255, CAR_TURN_RIGHT);
     parkedSlot = SLOT_ZERO;
+    slotsArray[0] = 0;
     Serial.println("Car Parked Successfully at slot 0 ...");
 }
 
 void parkingSlot_1() {
     updatedSlotPark(25, 16, 1, 130, 100, CAR_TURN_LEFT);
     parkedSlot = SLOT_ONE;
+    slotsArray[1] = 0;
     Serial.println("Car Parked Successfully at slot 1 ...");
 }
 
 void parkingSlot_2() {
     updatedSlotPark(40, 15, 1, 150, 255, CAR_TURN_RIGHT);
     parkedSlot = SLOT_TWO;
+    slotsArray[2] = 0;
     Serial.println("Car Parked Successfully at slot 2 ...");
 }
 
 void parkingSlot_3() {
     updatedSlotPark(50, 40, 1, 150, 255, CAR_TURN_LEFT);
     parkedSlot = SLOT_THREE;
+    slotsArray[3] = 0;
     Serial.println("Car Parked Successfully at slot 3 ...");
 }
 
