@@ -27,8 +27,6 @@
 	- [Software](#software)
 
 
-// https://youtu.be/CYcJuRovkP8
-
 ## Overview <a name="overview"></a>
 The valet parking application is a smart, IoT-based system designed to automate the process of parking, monitoring, and managing vehicles within a garage. The system utilizes various hardware components `(sensors, motors, ESP32, etc.)` and software frameworks `(Node-RED, MQTT, YOLO)` to ensure seamless communication, real-time monitoring, and user-friendly control. The overall goal is to streamline the parking experience, minimize human intervention, and ensure efficient space management.
 
